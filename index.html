@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://bloghomestay.vn/wp-content/uploads/2023/03/100-hinh-anh-co-bon-la-may-man-dep-nhat-cho-iphone-pc_4.jpg");
+        }
+          .dk{
+              width: 600px;
+              background-color: white;
+              box-shadow: 3px 3px 6px gray;
+              text-align: center;
+
+          }
+          .dk label{
+             padding: 20px;
+          }
+          input[type="text"]{
+                width: 90%;
+                height: 30px;
+                outline: none;
+                border: 1px solid gray;
+                border-radius: 12px;
+                margin: 10px;
+                padding-left: 15px;
+          }
+          input[type="submit"]{
+              width: 90%;
+              height: 34px;
+              color: aliceblue;
+              font-weight: bold;
+              outline: none;
+              border: none;
+              background-color: orange;
+              margin: 20px;
+          }
+          .overlay{
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: rgba(0, 0, 0, 0.6);
+              display: none;
+          }
+    </style>
+</head>
+<body>
+
+    <form  class="dk" id="loginForm">
+          <h1>Đăng nhập nhận quà</h1>
+          <label for="email">Email</label><br>
+          <input type="text" name="Email" id="email"><br>
+          <label for="password">Password</label><br>
+          <input type="text" name="Password" id="password"><br>
+          <input type="submit" onclick="check()" value="Đăng kí">
+    </form>
+
+    <div class="overlay">
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
